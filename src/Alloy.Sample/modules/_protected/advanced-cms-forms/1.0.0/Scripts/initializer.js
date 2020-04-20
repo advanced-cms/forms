@@ -2,12 +2,18 @@ define([
     "dojo/_base/declare",
     "epi/_Module",
     "epi-forms/widget/FieldSelectorDialog",
-    "episerver-labs-block-enhancements/inline-editing/commands/inline-edit"
+    "episerver-labs-block-enhancements/inline-editing/commands/inline-edit",
+    "epi-cms/widget/command/CreateContentFromSelector",
+    "epi-forms/widget/command/CreateContentFromSelector",
+    "epi-cms/contentediting/viewmodel/CreateContentViewModel"
 ], function (
     declare,
     _Module,
     FieldSelectorDialog,
-    InlineEdit
+    InlineEdit,
+    CreateContentFromSelector,
+    FormsCreateContentFromSelector,
+    CreateContentViewModel
 ) {
     return declare([_Module], {
         initialize: function () {
@@ -30,6 +36,17 @@ define([
                 };
 
                 originalBuildRendering.apply(this, arguments);
+            }
+
+            var original = CreateContentFromSelector.prototype._switchView;
+            FormsCreateContentFromSelector.prototype._switchView = function() {
+                original.apply(this, arguments);
+            }
+
+            var originalAutoPublishSetter = CreateContentViewModel.prototype._autoPublishSetter;
+            CreateContentViewModel.prototype._autoPublishSetter = function () {
+                originalAutoPublishSetter.apply(this, arguments);
+                this.autoPublish = true;
             }
         }
     });
