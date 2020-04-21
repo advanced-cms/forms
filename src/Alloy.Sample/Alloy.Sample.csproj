@@ -85,6 +85,18 @@
     <Reference Include="EPiServer.Configuration, Version=11.15.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.CMS.AspNet.11.15.0\lib\net461\EPiServer.Configuration.dll</HintPath>
     </Reference>
+    <Reference Include="EPiServer.ConnectForCampaign.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\EPiServer.ConnectForCampaign.3.0.0\lib\EPiServer.ConnectForCampaign.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.ConnectForCampaign.Implementation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\EPiServer.ConnectForCampaign.3.0.0\lib\EPiServer.ConnectForCampaign.Implementation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.ConnectForCampaign.Services, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\EPiServer.ConnectForCampaign.3.0.0\lib\EPiServer.ConnectForCampaign.Services.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EPiServer.Data, Version=11.15.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Framework.11.15.0\lib\net461\EPiServer.Data.dll</HintPath>
     </Reference>
@@ -126,6 +138,18 @@
     </Reference>
     <Reference Include="EPiServer.Logging.Log4Net, Version=2.2.2.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Logging.Log4Net.2.2.2\lib\net461\EPiServer.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Episerver.Marketing.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\EPiServer.ConnectForMarketingAutomation.5.5.3\lib\net461\Episerver.Marketing.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Episerver.Marketing.Connector, Version=5.5.3.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\EPiServer.ConnectForMarketingAutomation.5.5.3\lib\net461\Episerver.Marketing.Connector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Episerver.Marketing.Connector.Forms, Version=2.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\EPiServer.Marketing.Automation.Forms.2.1.0\lib\net461\Episerver.Marketing.Connector.Forms.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.ServiceLocation.StructureMap, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.ServiceLocation.StructureMap.2.0.3\lib\net461\EPiServer.ServiceLocation.StructureMap.dll</HintPath>
@@ -364,9 +388,13 @@
     <Content Include="modules\_protected\advanced-cms-forms\1.0.0\Scripts\editors\content-area-editor.js" />
     <Content Include="modules\_protected\advanced-cms-forms\1.0.0\Scripts\editors\content-area.js" />
     <Content Include="modules\_protected\advanced-cms-forms\1.0.0\Scripts\initializer.js" />
+    <Content Include="modules\_protected\EPiServer.ConnectForCampaign\EPiServer.ConnectForCampaign.zip" />
+    <Content Include="modules\_protected\Episerver.Marketing.Connector\ClientResources\Profile\Profile.js" />
+    <Content Include="modules\_protected\Episerver.Marketing.Connector\Views\Admin\Settings.aspx" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
     <Content Include="Resources\LanguageFiles\EditorHints.xml" />
+    <Content Include="resources\languagefiles\Episerver.Marketing.Automation.Forms_EN.xml" />
     <Content Include="Resources\LanguageFiles\GroupNames.xml" />
     <Content Include="Resources\LanguageFiles\PropertyNames.xml" />
     <Content Include="Resources\LanguageFiles\Views.xml" />
@@ -433,6 +461,8 @@
     <Content Include="modules\_protected\CMS\CMS.zip" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
+    <None Include="modules\_protected\EPiServer.ConnectForCampaign\Campaign.config" />
+    <None Include="modules\_protected\Episerver.Marketing.Connector\module.config" />
     <None Include="packages.config" />
     <Content Include="Views\_viewstart.cshtml" />
     <Content Include="Views\VideoFile\Index.cshtml" />
