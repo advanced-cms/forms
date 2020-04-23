@@ -9,6 +9,8 @@ Just double click any `Form Element` to edit its properties.
 
 ![Edit Form Properties](assets/documentation/inline_edit_form.gif "Edit Form Properties")
 
+![Add Form Elements](assets/documentation/inline-form-add.gif "Add Form Elements")
+
 ## Configuring enabled features
 
 To turn off one or more feature, use the `AdvancedCMSFormsOptions` options class and then, for example, in the initialization module, set `false` on the feature that should not be available. All features are enabled by default. 
