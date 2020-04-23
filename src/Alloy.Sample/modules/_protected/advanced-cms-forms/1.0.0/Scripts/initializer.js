@@ -5,7 +5,8 @@ define([
     "episerver-labs-block-enhancements/inline-editing/commands/inline-edit",
     "epi-cms/widget/command/CreateContentFromSelector",
     "epi-forms/widget/command/CreateContentFromSelector",
-    "epi-cms/contentediting/viewmodel/CreateContentViewModel"
+    "epi-cms/contentediting/viewmodel/CreateContentViewModel",
+    "epi-forms/widget/ChoiceItemWithSelection"
 ], function (
     declare,
     _Module,
@@ -13,7 +14,8 @@ define([
     InlineEdit,
     CreateContentFromSelector,
     FormsCreateContentFromSelector,
-    CreateContentViewModel
+    CreateContentViewModel,
+    ChoiceItemWithSelection
 ) {
     return declare([_Module], {
         initialize: function () {
@@ -47,6 +49,12 @@ define([
             CreateContentViewModel.prototype._autoPublishSetter = function () {
                 originalAutoPublishSetter.apply(this, arguments);
                 this.autoPublish = true;
+            }
+
+            var originalValidate = ChoiceItemWithSelection.prototype.validate;
+            ChoiceItemWithSelection.prototype.validate = function (ddl, data) {
+                originalValidate.apply(this, arguments);
+                return true;
             }
         }
     });
