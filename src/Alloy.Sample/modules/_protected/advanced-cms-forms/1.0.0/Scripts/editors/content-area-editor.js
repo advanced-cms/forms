@@ -27,6 +27,11 @@ define([
             if (this.advancedFormsOptions.inlineEditing) {
                 updateInlineEditCommands(this);
             }
+        },
+        _getCreateNewBlockCommand: function () {
+            var command = this.inherited(arguments);
+            command.set("autoPublish", true);
+            return command;
         }
     });
 });

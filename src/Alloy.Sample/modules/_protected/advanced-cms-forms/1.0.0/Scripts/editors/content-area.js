@@ -41,6 +41,11 @@ define([
                 propertyName: this.name,
                 value: value
             });
+        },
+        _getCreateNewBlockCommand: function () {
+            var command = this.inherited(arguments);
+            command.set("autoPublish", true);
+            return command;
         }
     });
 });
