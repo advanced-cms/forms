@@ -45,12 +45,6 @@ define([
                 original.apply(this, arguments);
             }
 
-            var originalAutoPublishSetter = CreateContentViewModel.prototype._autoPublishSetter;
-            CreateContentViewModel.prototype._autoPublishSetter = function () {
-                originalAutoPublishSetter.apply(this, arguments);
-                this.autoPublish = true;
-            }
-
             var originalValidate = ChoiceItemWithSelection.prototype.validate;
             ChoiceItemWithSelection.prototype.validate = function (ddl, data) {
                 originalValidate.apply(this, arguments);
