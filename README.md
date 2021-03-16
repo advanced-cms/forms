@@ -2,6 +2,10 @@
 
 # Advanced Forms
 
+DEPRECATED! THIS PACKAGE IS NO LONGER NEEDED SINCE EPISERVER 11.34.0 https://nuget.episerver.com/package/?id=EPiServer.CMS.UI.Core&v=11.34.0
+
+PLEASE UNINSTALL IT AND UPGRADE CMS UI
+
 Episerver 11+ extension that enhances the Forms editing experience.
 
 Editor is now able to edit every form inline, without the need to switch the editing context.
