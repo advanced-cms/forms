@@ -2,7 +2,10 @@
 
 # Advanced Forms
 
-DEPRECATED! THIS PACKAGE IS NO LONGER NEEDED SINCE EPISERVER 11.34.0 https://nuget.episerver.com/package/?id=EPiServer.CMS.UI.Core&v=11.34.0
+> ⚠ WARNING: DEPRECATED! THIS PACKAGE IS NO LONGER MAINTAINED 
+> EPISERVER 11.34.0 https://nuget.episerver.com/package/?id=EPiServer.CMS.UI.Core&v=11.34.0
+> has built-in support for Quick Edit command
+> Please uninstall this package as it will be removed from the feed at some point
 
 PLEASE UNINSTALL IT AND UPGRADE CMS UI
 
