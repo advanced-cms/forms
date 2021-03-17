@@ -2,12 +2,10 @@
 
 # Advanced Forms
 
-> ⚠ WARNING: DEPRECATED! THIS PACKAGE IS NO LONGER MAINTAINED 
-> EPISERVER 11.34.0 https://nuget.episerver.com/package/?id=EPiServer.CMS.UI.Core&v=11.34.0
-> has built-in support for Quick Edit command
+> ⚠ WARNING: This package is no longer maintained.
+> Episerver CMS UI 11.34.0 has built-in support for Quick Edit command
+> Download it from https://nuget.episerver.com/package/?id=EPiServer.CMS.UI.Core&v=11.34.0
 > Please uninstall this package as it will be removed from the feed at some point
-
-PLEASE UNINSTALL IT AND UPGRADE CMS UI
 
 Episerver 11+ extension that enhances the Forms editing experience.
 
